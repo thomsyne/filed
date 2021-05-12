@@ -1,10 +1,11 @@
-import { LandingComponent } from './components/landing/landing.component';
 import { LandingModule } from './components/landing/landing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
+import { addUserReducer } from './state/user.reducer';
 
 @NgModule({
   declarations: [	
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LandingModule
+    LandingModule,
+    StoreModule.forRoot({user: addUserReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

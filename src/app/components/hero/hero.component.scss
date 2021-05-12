@@ -12,3 +12,20 @@
     top: 46%;
     left: 27%;
 }
+
+@media only screen and (min-width: 1500px) {
+    .small-circle {
+        top: 60%;
+        left: 23%;
+    }
+    
+    .medium-circle {
+        top: 54%;
+        left: 26%
+    }
+    
+    .large-circle {
+        top: 46%;
+        left: 29%;
+    }
+}
