@@ -1,7 +1,7 @@
 import { environment } from "src/environments/environment";
 
-export const EstateConstant = {
-    estateUrl: `${environment.baseUrl}`,
+export const ApiConstant = {
+    apiUrl: `${environment.baseUrl}`,
 }
 interface ApplicationPathsType {
     readonly Landing: string;

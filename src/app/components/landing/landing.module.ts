@@ -8,12 +8,17 @@ import { LandingRoutingModule } from './landing-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [LandingComponent, HeroComponent, UserFormComponent, OffersComponent, BenefitsComponent, TestimonialsComponent, FooterComponent],
   imports: [
     CommonModule,
     LandingRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
 })
 export class LandingModule { }
