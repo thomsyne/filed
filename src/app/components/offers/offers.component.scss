@@ -1,0 +1,9 @@
+.offer-div {
+    height: 22rem;
+}
+
+@media only screen and (max-width: 667px) {
+    .offer-div {
+      height: 18rem;
+    }
+}
